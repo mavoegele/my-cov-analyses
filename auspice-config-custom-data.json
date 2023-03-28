@@ -1,20 +1,20 @@
 {
   "colorings": [
     {
-      "key": "custom_data",
-      "title": "Custom data",
+      "key": "urban_rural",
+      "title": "Urban Rural Wisconsin",
       "type": "categorical",
       "legend": [
-        {"value": "no"},
-        {"value": "yes"}
+        {"value": "Urban"},
+        {"value": "Rural"}
       ],
       "scale": [
-        ["no", "#4c90c0"],
-        ["yes", "#cbb742"]
+        ["Urban", "#4c90c0"],
+        ["Rural", "#cbb742"]
       ]
     }
   ],
   "display_defaults": {
-    "color_by": "custom_data"
+    "color_by": "urban_rural"
   }
 }
