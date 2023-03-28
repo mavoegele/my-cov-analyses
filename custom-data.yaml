@@ -2,9 +2,12 @@ inputs:
   - name: reference_data
     metadata: https://data.nextstrain.org/files/ncov/open/reference/metadata.tsv.xz
     sequences: https://data.nextstrain.org/files/ncov/open/reference/sequences.fasta.xz
-  - name: custom_data
-    metadata: data/custom.metadata.tsv
-    sequences: data/custom.sequences.fasta
+  - name: north-america_data
+    metadata: https://data.nextstrain.org/files/ncov/open/north-america/metadata.tsv.xz
+    aligned: https://data.nextstrain.org/files/ncov/open/north-america/aligned.fasta.xz
+  - name: urban_rural_data
+    metadata: Users/mavoeg/Desktop/ncov/data/custom.metadata.tsv
+    sequences: Users/mavoeg/Desktop/ncov/data/custom.sequences.fasta
 
 # GenBank data includes "Wuhan-Hu-1/2019" which we use as the root for this build.
 refine:
@@ -12,9 +15,9 @@ refine:
 
 builds:
   custom-build:
-    title: "Build with custom data and example data"
+    title: "Build with Urban Rural Wisconsin data and example data"
     # TODO: link to configuration guide
-    subsampling_scheme: all
+    subsampling_scheme: urban_rural_data
     # Defines colorings for input data sources
     # More at https://docs.nextstrain.org/projects/ncov/en/latest/analysis/customizing-visualization.html
     auspice_config: ncov-tutorial/auspice-config-custom-data.json
