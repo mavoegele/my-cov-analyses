@@ -1,23 +1,13 @@
 {
-  "title": "Genomic epidemiology of novel coronavirus in Switzerland",
-  "build_url": "https://github.com/nextstrain/ncov",
-  "maintainers": [
-    {"name": "Emma Hodcroft, Richard Neher, Sarah Nadeau, Tanja Stadler", "url": "https://neherlab.org"}
-  ],
   "colorings": [
     {
+      "key": "urban_rural",
+      "title": "Urban and Rural WI",
+      "type": "categorical"
+    },
+    {
       "key": "location",
-      "title": "Location",
-      "type": "categorical"
-    },
-    {
-      "key": "division",
-      "title": "Admin Division",
-      "type": "categorical"
-    },
-    {
-      "key": "country",
-      "title": "Country",
+      "title": "County",
       "type": "categorical"
     },
     {
